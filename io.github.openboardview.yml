@@ -16,4 +16,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/vlad-sharpie/OpenBoardView
-        commit: 390bc5f
+        commit: 88b9c6e
