@@ -6,7 +6,7 @@ command: openboardview
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
-  - --socket=ipc
+  - --share=ipc
   - --filesystem=home
 
 modules:
