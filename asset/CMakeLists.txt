@@ -17,13 +17,13 @@ elseif(WIN32)
 elseif(UNIX)
 	if(FLATPAK)
 		message(STATUS "Running in Flatpak build mode")
-		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.desktop"
+		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.openboardview.desktop"
 			    DESTINATION "/app/share/applications")
-		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.metainfo.xml"
+		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.openboardview.metainfo.xml"
 			    DESTINATION "/app/share/metainfo")
-		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.svg"
+		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.openboardview.svg"
 			    DESTINATION "/app/share/icons/hicolor/scalable/apps")
-		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.xml"
+		install(FILES "${CMAKE_CURRENT_BINARY_DIR}/flatpak/io.github.openboardview.openboardview.xml"
 			    DESTINATION "/app/share/mime/packages")
 	else()
 		configure_file("app.desktop" "${PROJECT_NAME_LOWER}.desktop" @ONLY)

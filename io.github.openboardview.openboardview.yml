@@ -1,4 +1,4 @@
-id: io.github.openboardview
+id: io.github.openboardview.openboardview
 runtime: org.freedesktop.Platform
 runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
@@ -6,6 +6,7 @@ command: openboardview
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
+  - --socket=ipc
   - --filesystem=home
 
 modules:
@@ -17,3 +18,5 @@ modules:
       - type: git
         url: https://github.com/vlad-sharpie/OpenBoardView
         branch: master
+        x-checker-data:
+          - type: git
